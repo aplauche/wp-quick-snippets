@@ -2,7 +2,6 @@
 /**
  * Enqueue custom block styles.
  *
- * @package mbsbt
  */
 
 namespace MY_THEME\inc;

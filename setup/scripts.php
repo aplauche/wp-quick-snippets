@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles.
  *
- * @package mbsbt
+
  */
 
 namespace MY_THEME\inc;

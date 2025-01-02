@@ -27,7 +27,7 @@ function setup() {
 	// Gutenberg support for full-width/wide alignment of supported blocks.
 	add_theme_support( 'align-wide' );
 
-	// Menus
+	// Add support for nav menus and create one location.
 	register_nav_menus(
 		[
 			'primary' => esc_html__( 'Primary Menu', 'textdomain' ),
@@ -57,13 +57,4 @@ add_action('wp_head', function(){
   echo "<noscript><style>.gsap-mask{opacity: inherit; visibility: inherit;}</style></noscript>";
 });
 
-
-/**
- * Allow editors to access Gravity Forms
- */
-function gravity_forms_roles() {
-	$role = get_role( 'editor' );
-	$role->add_cap( 'gform_full_access' );
-}
-add_action( 'admin_init',  __NAMESPACE__ . '\gravity_forms_roles' );
 
